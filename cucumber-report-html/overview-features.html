@@ -155,8 +155,8 @@ $(document).ready(function() {
   var chartData = {
     datasets: [{
       data: [
-        7,
-        4
+        3,
+        2
       ],
       backgroundColor: [
         "#00B000",
@@ -189,7 +189,7 @@ $(document).ready(function() {
             var allData = data.datasets[tooltipItem.datasetIndex].data;
             var tooltipLabel = data.labels[tooltipItem.index];
             var tooltipData = allData[tooltipItem.index];
-            var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
+            var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
             return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
           }
         }
@@ -232,11 +232,11 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Somnath&#39;s Project</td>
+      <td>My Project</td>
       
         <td>1</td>
       
-      <td>11 May 2023, 10:25</td>
+      <td>11 May 2023, 14:38</td>
     </tr>
   </tbody>
 </table>
@@ -254,52 +254,12 @@ $(document).ready(function() {
     
       <tr class="info">
         <th>Browser</th>
-        <td>Firefox</td>
+        <td>Chrome</td>
       </tr>
     
       <tr class="info">
         <th>Branch</th>
         <td>release/1.0</td>
-      </tr>
-    
-      <tr class="info">
-        <th>AngularVersion</th>
-        <td>1.5.11</td>
-      </tr>
-    
-      <tr class="info">
-        <th>AutUiVersion</th>
-        <td>1.25.3</td>
-      </tr>
-    
-      <tr class="info">
-        <th>AutApiVersion</th>
-        <td>1.25.0.7</td>
-      </tr>
-    
-      <tr class="info">
-        <th>chromeVersion</th>
-        <td>61.0.3163.100</td>
-      </tr>
-    
-      <tr class="info">
-        <th>firefoxVersion</th>
-        <td>56.0</td>
-      </tr>
-    
-      <tr class="info">
-        <th>NodeJsVersion</th>
-        <td>8.5.0</td>
-      </tr>
-    
-      <tr class="info">
-        <th>Proxy</th>
-        <td>http=//172.22.240.68:18717</td>
-      </tr>
-    
-      <tr class="info">
-        <th>NpmVersion</th>
-        <td>5.3.0</td>
       </tr>
     
   </tbody>
@@ -421,6 +381,48 @@ $(document).ready(function() {
       </tr>
     
       <tr>
+        <td class="tagname"><a href="report-feature_3_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
+        
+          <td>part2</td>
+        
+
+        <td class="passed">2</td>
+        <td class="failed">3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="passed">2</td>
+        <td class="failed">3</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="62249657100">00:01:02.249</td>
+        <td class="failed">Failed</td>
+      </tr>
+    
+      <tr>
+        <td class="tagname"><a href="report-feature_4_1abafa90f0cfa7880bb485850ff4af6b4cbd40944946b855f4ca452250717ee2.html">Product categories</a></td>
+        
+          <td>part1</td>
+        
+
+        <td class="passed">9</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">9</td>
+
+        <td class="passed">3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="43056405303">00:00:43.564</td>
+        <td class="passed">Passed</td>
+      </tr>
+    
+      <tr>
         <td class="tagname"><a href="report-feature_1_e3e40b9acbc8eb33ac6c6583708cb0dbccbac9a13b41729a1144b8246ae05406.html">Second feature</a></td>
         
           <td>sample</td>
@@ -462,174 +464,6 @@ $(document).ready(function() {
         <td class="passed">Passed</td>
       </tr>
     
-      <tr>
-        <td class="tagname"><a href="report-feature_3_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
-        
-          <td>part2</td>
-        
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="12449931300">00:00:12.449</td>
-        <td class="failed">Failed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_4_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
-        
-          <td>part2-rerun-passed</td>
-        
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="12449931600">00:00:12.449</td>
-        <td class="passed">Passed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_5_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
-        
-          <td>part2-rerun-failed</td>
-        
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="12449931600">00:00:12.449</td>
-        <td class="failed">Failed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_6_1abafa90f0cfa7880bb485850ff4af6b4cbd40944946b855f4ca452250717ee2.html">Product categories</a></td>
-        
-          <td>part1</td>
-        
-
-        <td class="passed">3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="14352135101">00:00:14.352</td>
-        <td class="passed">Passed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_7_1abafa90f0cfa7880bb485850ff4af6b4cbd40944946b855f4ca452250717ee2.html">Product categories</a></td>
-        
-          <td>all-passed</td>
-        
-
-        <td class="passed">3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="14352135101">00:00:14.352</td>
-        <td class="passed">Passed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_8_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
-        
-          <td>all-passed</td>
-        
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="12449931300">00:00:12.449</td>
-        <td class="passed">Passed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_9_1abafa90f0cfa7880bb485850ff4af6b4cbd40944946b855f4ca452250717ee2.html">Product categories</a></td>
-        
-          <td>all-last-failed</td>
-        
-
-        <td class="passed">3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="passed">1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="14352135101">00:00:14.352</td>
-        <td class="passed">Passed</td>
-      </tr>
-    
-      <tr>
-        <td class="tagname"><a href="report-feature_10_1488b08a7cd0ed1f99e19593126c5df96d886ca2198cc6b0be0e7de1696d5efb.html">Home page</a></td>
-        
-          <td>all-last-failed</td>
-        
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td >0</td>
-        <td class="failed">1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="12449931300">00:00:12.449</td>
-        <td class="failed">Failed</td>
-      </tr>
-    
   </tbody>
 
   <tfoot class="total">
@@ -649,7 +483,7 @@ $(document).ready(function() {
       <td>13</td>
 
       <td class="duration">00:03:24.785</td>
-      <td>11</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
@@ -666,7 +500,7 @@ $(document).ready(function() {
       <td>38.46%</td>
       <td></td>
       <td></td>
-      <td>63.64%</td>
+      <td>60.00%</td>
     </tr>
   </tfoot>
 </table>
